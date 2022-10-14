@@ -110,5 +110,4 @@ NOT: Normalde yukarıdaki tüm ayarlamaları ve configleri yapmak gerekmektedir.
 
 NOT: "CM" komutu ile de güvenlik ayarlarını görmenizi sağlar. Kontrolü bu şekilde sağlayabilirsiniz.
 
-![image](https://user-images.githubusercontent.com/77227227/195839240-1a28bc3b-30b3-47bf-a1be-91f9f9c9fbda.png)
-
+![Untitled](https://user-images.githubusercontent.com/77227227/195839328-a6435fa3-6cf8-4ed9-bbeb-88d38fa1ba7a.png)
