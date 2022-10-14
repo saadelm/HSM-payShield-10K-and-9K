@@ -19,7 +19,8 @@ GC GS EC FK
 List of enable Host commands;
 A0 A4 GG GY
 
-
+![11](https://user-images.githubusercontent.com/77227227/195815944-6dc5b97e-7cf7-4deb-be88-ed0fb1a4bd0f.png)
+  
 Ör-2: İkinci örnek bir konsol komutunu (DE) etklinleştirmek ve console komutunu (A4) devre dışı bırakmak için kullanılan örnektir.
 
 Secure> CONFIGCMDS <Return> 
