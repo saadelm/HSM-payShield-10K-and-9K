@@ -24,3 +24,9 @@ Inputs : Secenekleri istelilen duruma göre konfigürasyon işlemi tamamlanır.
 
 ör-1 : 
 
+![image](https://user-images.githubusercontent.com/77227227/195867664-6b708748-9d36-442f-9790-e6d077a34d6d.png)
+
+not: "CH" komutunu kullanarak gerekli ayarlamaları istenilen duruma göre yapılandırabiliyorsunuz. Ör: IP adresi, subnet, TLS, TCP, UDP vs gibi ayarlamaları gerçekleştirebiliyorsunuz. Eğer HSM cihazından daha önceden config yapılmış ve düzelmek istiyorsanız  "Save HOST settings to smart card? [Y/N]:" Y olarak işaretlemeniz gerekmektedir. Ancak bu süreçte LMK erase edilir ve tekrardan üretilir.
+
+
+ 
