@@ -41,3 +41,28 @@ Save COMMAND settings to smart card? [Y/N]: N <Return>
 Secure> 
 
 
+Ör: Son örnek tüm komutları devre dışı bırakmak ve ardından sadece “A” ile başlayan console komularını etkinleştirmek için “*” joker karaktereinin kullanan CONFIGCMDS komutunu göstermek için yapılan örnektir.
+
+Secure> CONFIGCMDS <Return> 
+List of enabled Console commands: 
+GC GS EC FK 
+List of enabled Host commands: 
+A0 A4 GG GY 
+Enter command code (e.g. +CDE) or Q to Quit: -H* <Return> 
+List of enabled Console commands: 
+GC GS EC FK DE 
+List of enabled Host commands: 
+Enter command code (e.g. +CDE) or Q to Quit: +HA* <Return> 
+List of enabled Console commands: 
+GC GS EC FK DE 
+List of enabled Host commands: 
+A0 A2 A4 A6 A8 AA AC AE AG AS AU AW AY 
+Enter command code (e.g. +CDE) or Q to Quit: Q <Return> 
+Save COMMAND settings to smart card? [Y/N]: Y <Return> 
+Insert card and press ENTER: <Return> 
+COMMAND settings saved to the smartcard. 
+Secure> 
+
+
+
+
