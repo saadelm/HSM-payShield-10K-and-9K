@@ -28,3 +28,4 @@ no flow control
 
 NOTE: "CC" komutu 10K Payshield HSM cihazlarında kullanılmıyor.
 
+![image](https://user-images.githubusercontent.com/77227227/195861029-249addc0-4417-4430-9aaf-f938d33929f2.png)
