@@ -18,8 +18,9 @@ List of enable Console commands;
 GC GS EC FK
 List of enable Host commands;
 A0 A4 GG GY
+  
+![image](https://user-images.githubusercontent.com/77227227/195816544-bdd9b3ab-f05d-435b-89ff-038dc95ec07a.png)
 
-![11](https://user-images.githubusercontent.com/77227227/195815944-6dc5b97e-7cf7-4deb-be88-ed0fb1a4bd0f.png)
   
 Ör-2: İkinci örnek bir konsol komutunu (DE) etklinleştirmek ve console komutunu (A4) devre dışı bırakmak için kullanılan örnektir.
 
@@ -42,6 +43,9 @@ Enter command code (e.g. +CDE) or Q to Quit: Q <Return>
 Save COMMAND settings to smart card? [Y/N]: N <Return> 
 Secure> 
 
+
+ ![11](https://user-images.githubusercontent.com/77227227/195815944-6dc5b97e-7cf7-4deb-be88-ed0fb1a4bd0f.png)
+  
 
 Ör: Son örnek tüm komutları devre dışı bırakmak ve ardından sadece “A” ile başlayan console komularını etkinleştirmek için “*” joker karaktereinin kullanan CONFIGCMDS komutunu göstermek için yapılan örnektir.
 
