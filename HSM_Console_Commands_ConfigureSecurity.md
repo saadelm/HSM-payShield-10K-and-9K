@@ -4,4 +4,4 @@ Configure Security                    ![image](https://user-images.githubusercon
 
 Command : CS
 
-Function: 
+Function: 1
