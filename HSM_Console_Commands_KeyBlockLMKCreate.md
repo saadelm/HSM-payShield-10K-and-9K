@@ -59,3 +59,38 @@ Geçersiz anahtar - Birden çok anahtar bileşen gerekli - birden çok bileşeni
 
 Command : LK komutunu kullanacak işlemlere başlıyoruz. ve LK komutunu girdikten sonra bizdeler LMK ID soracaktır ve keyblock 1 olduğu için 1 işaretleyip enter'a basıyoruz.
 
+![image](https://user-images.githubusercontent.com/77227227/195851082-8913a930-9796-465c-a68f-7b5fc939e8cc.png)
+
+Daha sonraki aşamada ise enter command seceneği geliyor ve biz de keyblockLMK için bir commet belirliyoruz Ör:KeyBlockLMK
+
+![image](https://user-images.githubusercontent.com/77227227/195851298-30448c60-28ea-4d24-acc5-8413bce0b6a8.png)
+
+Diğer aşamada insert card and press ENTER : kısmı geliyor ve keyblockLMK smartcard'ının hsm cihazına insert ediyoruz.
+
+![image](https://user-images.githubusercontent.com/77227227/195851533-86a46dc3-cd10-4248-940a-328e0bc7d899.png)
+
+smartcard PIN'i giriyoruz. ve hsm cihazı smartcard'ı kendisi çıkartıyor ve bize check: "examplenumber" değeri veriyor.
+
+Load more components? Y/N şeklinde diğer seçenek geliyor ve başka bir component üretmek istersek yes diyoruz ve diğer lmk smartcardını takıyoruz. yok ise "N" diyoruz ve işlem tamamlanmış oluyor.
+
+![image](https://user-images.githubusercontent.com/77227227/195852160-47d8b0da-29bc-4049-8e9e-21ee9156918d.png)
+
+Confirm Details Y/N : şeklinde seçenek geliyor ve Y dedikten sonra keyblockLMK üretmiş oluyoruz.
+
+En son işlem başarılı bir şekilde tamamlandıktan sonra VT komutu ile keyblock LMK'yı görmek için yazıp çalıştırıyoruz.
+
+![image](https://user-images.githubusercontent.com/77227227/195852708-fd6006fb-2b59-4a48-9218-d311ccd8366f.png)
+
+comment schema algoritma olarak hepsini kontrol edebiliyoruz check kısmında değerleri de yazıyor.
+
+
+
+
+
+
+
+
+
+
+
+
