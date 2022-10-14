@@ -104,4 +104,11 @@ Input :
  
  Save SECURITY settings to smartcard? [Y/N]: Y or N
  
- 
+ ![image](https://user-images.githubusercontent.com/77227227/195837921-2e66ac2b-d59e-4d96-9e8f-a31b6899c16b.png)
+
+NOT: Normalde yukarıdaki tüm ayarlamaları ve configleri yapmak gerekmektedir. Image da görülen kısımda eğer siz CS komutu ile güvenlik ayarlarını düzenlemek isterseniz var olan LMK'yı silmeniz gerekmektedir. Eğer erease LMK kısmında "N" derseniz güvenlik ayarlarının tamamını yapamazsınız.
+
+NOT: "CM" komutu ile de güvenlik ayarlarını görmenizi sağlar. Kontrolü bu şekilde sağlayabilirsiniz.
+
+![image](https://user-images.githubusercontent.com/77227227/195839240-1a28bc3b-30b3-47bf-a1be-91f9f9c9fbda.png)
+
