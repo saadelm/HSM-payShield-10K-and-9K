@@ -53,6 +53,11 @@ Input :
  Enforce host port override for LMK use? [Y/N]: Y or N
  Enforce key type 002 separation for PCI HSM compliance [Y/N]: Y or N. See notes below.
  Restrict PIN block usage for PCI HSM compliance? [Y/N]: Y or N.
+ 
  Enforce Authorization Time Limit? [Y/N] : Y or N.
+ 
  Enforce Multiple Key Components? [Y/N] : Y or N.
+ 
  Save SECURITY settings to smartcard? [Y/N]: Y or N
+ 
+ 
