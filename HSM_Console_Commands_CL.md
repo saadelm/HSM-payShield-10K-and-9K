@@ -20,3 +20,13 @@ Errors : Kart, HSM ayarlarını kaydetmek/almak için biçimlendirilmemiş. Baş
 
 ![image](https://user-images.githubusercontent.com/77227227/196165705-73575570-c12b-4051-88cc-3c524154b417.png)
 
+
+
+
+öR-2 : less ve more secure dediğimiz iki kavram vardır. Hareket alarmında yüksek veya az güvenli olarak ayarlayabilirsiniz.
+
+
+![image](https://user-images.githubusercontent.com/77227227/196166595-b164c9f0-ea3d-4075-91d2-8f6a30673e9b.png)
+
+"CL" komutunu girdikten sonra size Motion alarm [Low/Med/High/ofF] (OFF): bir kısım gelecektir. Eğer yüksek güvenlik istiyorsanız "H" olarak yazıp enter'a basmanız gerekmektedir. Eğer düşük alarm seviyesi istiyorsanız da "L" seçeneğini seçip enter'a basmanız gerekmektedir.
+
