@@ -29,3 +29,6 @@ PayShield Manager bağlantısını etkinleştirin (yerel veya uzak)
 Output: None
 
 Errors : None
+
+![image](https://user-images.githubusercontent.com/77227227/196155433-afe734e7-c6ff-4224-b825-7f5e15b03e9b.png)
+
