@@ -10,6 +10,17 @@ Authorization: HSM'in Authorizate etmek için offline ve secure modunda olması 
 
 Inputs :  
 
+IP adresinin manual mi yoksa otomatik mi üretildiği
+
+Manuel olarak türetilmişse, adres ayrıntıları girilmelidir.
+
+DHCP kullanılıyorsa, bir ağ adı girilebilir.
+
+Ethernet hız ayarı.
+
+PayShield Manager bağlantısını etkinleştirin (yerel veya uzak)
+
+
 
 "CM" komut çıktısı
 
