@@ -1,1 +1,17 @@
+Configure Managment Port
+
+Command : "CM"
+
+Function : Sadece HSM'nin yönetimi için kullanılan bir Ethernet bağlantı noktası olan Yönetim bağlantı noktasını yapılandırmak için kullanılır. Ana bilgisayara bağlantı Ethernet üzerinden ise, bu amaç için Ethernet ana bilgisayar bağlantı noktası kullanılır. Yönetim Ethernet portu, HSM'nin dahili yazılımını güncellemek, lisans bilgilerini güncellemek ve bir HSM'nin payShield Manager aracılığıyla yönetilmesini sağlamak için kullanılır.
+
+Ayrıca yeni gelen konfigürasyon ayarlarını ve HSM cihazının kullanması gereken fonksiyonları enable/disable etme durumu vardır.
+
+Authorization: HSM'in Authorizate etmek için offline ve secure modunda olması gerekmektedir. 
+
+Inputs :  
+
+
+"CM" komut çıktısı
+
+![image](https://user-images.githubusercontent.com/77227227/196153566-aa8e5c3b-ec62-46f1-b296-a440e3281f51.png)
 
