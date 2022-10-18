@@ -14,3 +14,5 @@ Output : durum ile alakalı çıktı alınır.
 ör-1 : SNMP TRAP enable edilmiş durumdadır.
 
 ![image](https://user-images.githubusercontent.com/77227227/196419605-fe3328e8-3891-4251-b2eb-e87eb1350bfb.png)
+
+TRAP: Bu komut ajan uygulamanın çalıştığı cihazda herhangi bir değişiklik olması durumunda yöneticiye otomatik olarak bilgi değişikliğini haber vermeye yarayan işlemdir.
