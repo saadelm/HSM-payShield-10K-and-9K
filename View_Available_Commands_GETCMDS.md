@@ -28,3 +28,13 @@ Switch      Description
   
   
   ![image](https://user-images.githubusercontent.com/77227227/196630413-dac85cab-c9c6-436d-9542-d674666b7424.png)
+  
+  
+  
+  GETCMDS -h -l 
+  
+  ![image](https://user-images.githubusercontent.com/77227227/196631576-4604fbb9-cf9f-4810-9c04-43d064380b50.png)
+
+  
+  
+  
