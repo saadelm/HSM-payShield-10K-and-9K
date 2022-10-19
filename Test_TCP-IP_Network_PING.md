@@ -61,3 +61,9 @@ Parametreler:
 
 Outputs : 
 
+
+ör-1 : 
+
+![image](https://user-images.githubusercontent.com/77227227/196661927-154812b3-107a-4904-9eb2-d110aefd72e8.png)
+
+
