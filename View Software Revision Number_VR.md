@@ -20,6 +20,5 @@ Yazılımın bu sürümü PCI HSM sertifikalı değil veya Yazılımın bu sür�
 
 Ör-1: 
 
-
-![image](https://user-images.githubusercontent.com/77227227/196627280-13e0a5b0-f8b0-4e81-baa4-5cef533a3d1a.png)
+![image](https://user-images.githubusercontent.com/77227227/196627451-81320ad5-7013-4af8-8727-6364cc258952.png)
 
