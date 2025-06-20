@@ -1,27 +1,20 @@
 Configure Auxiliary Port
 
-Command : "CA"
+Command: CA
 
-Function : Sadece HSM'den SNMP trafiğinin iletimi için kullanılan bir Ethernet bağlantı noktası olan Yardımcı bağlantı noktasını yapılandırmak için.
+Function: Configures the Auxiliary Ethernet port, which is used only for SNMP traffic from the HSM.
 
+Authorization: The HSM must be offline and in Secure mode.
 
-Authorizatain : HSM cihazının yetkisinin sadece offline ve secure olması gerekmektedir.
+Inputs:
+- The IP address can be set automatically or manually.
+- If set manually, provide the address details.
+- If DHCP is used, a network name can be entered.
 
-![image](https://user-images.githubusercontent.com/77227227/196161838-7d97a9b8-2958-47aa-956f-569a725a7e6a.png)
+Outputs: None
 
-Inputs : 
+Errors: None
 
-IP adresini otomatik veya manual olarak verilebilmektedir.
-
-Manuel olarak türetilmişse, adres ayrıntıları girilmelidir.
-
-DHCP kullanılıyorsa, bir ağ adı girilebilir.
-
-Outputs : None.
-
-Errors : None.
-
-Ör-1:
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/196161838-7d97a9b8-2958-47aa-956f-569a725a7e6a.png)
-

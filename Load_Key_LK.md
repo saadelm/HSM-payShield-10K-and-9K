@@ -1,27 +1,18 @@
-Load LMK (LMK Yükleme)
+Load LMK
 
+Command: LK
 
-Command : "LK"
-Function : HSM Cihazının içerisini LMK yüklemek için kullandığımız komuttur. KeyBlock veya Variant LMK yüklemek için önce bu komutu girip daha sonra smartcardları cihazı takıp onay vermemiz gerekmektedir.
+Function: Loads an LMK into the HSM. To load either a Key Block or Variant LMK, first issue this command and then insert the smart cards and confirm.
 
-Auth : Bu komutun çalışması için Secure Modunun açık olması gerekmektedir.
+Authorization: The HSM must be in Secure mode.
 
-Inputs : 
-
-LMK Tanımlayıcı: 2 sayısal basamak.
-
-LMK bileşenlerine sahip akıllı kartlar (RLMK'ler desteklenir).
-
-(Smart)Akıllı kartlar veya şifreler için PIN'ler. PIN 60 saniye içinde girilmelidir.
-
-Bu LMK'nın Varsayılan/Yönetim LMK'sı yapılıp yapılmayacağının girdisidir.
+Inputs:
+- LMK Identifier: two digits
+- Smart cards containing the LMK components (RLMKs supported)
+- PINs for the smart cards or passwords (must be entered within 60 seconds)
+- Whether this LMK should become the Default/Management LMK
 
 Outputs:
-
-Bireysel LMK bileşeni kontrol değeri/değerleri.
-
-Nihai LMK kontrol değeri.
-
-
-ör-1 : 
+- Individual LMK component check values
+- Final LMK check value
 

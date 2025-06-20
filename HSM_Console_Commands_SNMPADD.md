@@ -1,13 +1,13 @@
-Add a SNMP Community or User (Bir SNMP Topluluğu veya Kullanıcısı Ekle)
+Add a SNMP Community or User
 
-Command : SNMPADD
+Command: SNMPADD
 
-Function : SNMP eklemek ve snmp 1 snmp2 ve snmp3 versiyonlarının kullanımı
+Function: Adds SNMP information and supports SNMP versions 1, 2, and 3.
 
-Authorization : Bu komut için yetkilendirme gerektirmez.
+Authorization: Not required.
 
-Inputs : SNMP Bilgisi ve versiyonu
+Inputs: SNMP details and version.
 
-örnek-1 :  hem kullanıcı (user) hem de community(topluluk) olarak snmp'yi eklemiş bulunmaktayız.
+Example: Adding both a user and a community entry.
 
 ![image](https://user-images.githubusercontent.com/77227227/196416781-ac24cd9c-005d-4c02-94d2-15c5d48a4423.png)

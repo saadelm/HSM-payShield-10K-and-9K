@@ -1,15 +1,11 @@
-View/Reset Health Check Counts (Sağlık Kontrolü Sayılarını Görüntüle/Sıfırla)
+View/Reset Health Check Counts
 
-Command : HEALTHSTATS
+Command: HEALTHSTATS
 
-Function : HSM üzerindeki  PIN doğrulama, PIN atak limit ve saat limitini görmenizi sağlar.
+Function: Allows you to view PIN verification, PIN attack limit and hourly limit statistics on the HSM. Options are provided to print the data to a connected printer and to reset the accumulated data to zero.
 
-Konsolda Sağlık Kontrolü sayılarını görüntülemek için. Verileri HSM'ye bağlı bir yazıcıya yazdırma ve birikmiş verileri sıfıra sıfırlama seçenekleridir.
+Authorization: No authorization required, but the HSM must be offline or in Secure mode. Diagnostic privilege is required.
 
-
-Auth: herhangibir yetkiye gerek yoktur. Ancak HSM offline veya secure modda çalışması gerekmektedir. Yetki için diagnostic yetkisinin olması gerekmektedir.
-
-
-ör-1 :
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/196678506-cdd4346a-0af9-4039-83a8-235a62f7c779.png)

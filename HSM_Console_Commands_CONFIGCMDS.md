@@ -1,77 +1,46 @@
-Thales Payshield 9K ve 10K Console Commands.
+Console Command Configuration
 
-1-) CONFIGCMDS  
+1) CONFIGCMDS
 
-Host ve console komutlarının enable ve disable listesinş gösteren komuttur. Tüm komutlar default olarak enable gelir istersek biz disable duruma çekebiliriz.
+This command lists host and console commands that are enabled or disabled. All commands are enabled by default but can be disabled as required.
 
-Komutların enable ve disable olması için takip edilen sytax [+,-] ve [C,H] [Command Code] olacak şekildedir.
+Use the syntax `+` or `-` with `C` or `H` followed by the command code:
+- `+` enables the specified command
+- `-` disables the specified command
+- `C` identifies a console command
+- `H` identifies a host command
 
-“+” belirtilen komutları enable etmemiz için kullanılır.
-“-“ belirtilen komuları disable etmemiz için kullanılır.
-“C” <Command Code> olarak kullanılır.
-“H” <Command Code> olarak kullanılır.
+Authorization: The HSM must be in Secure mode to enable or disable commands.
 
-Authorization: Komutları enable/disable etmek için HSM cihazının secure modda olması gerekmektedir.
-Ör1:
-Online > CONFIGCMDS ;
-List of enable Console commands;
+Example 1:
+```
+Online > CONFIGCMDS
+List of enabled Console commands:
 GC GS EC FK
-List of enable Host commands;
+List of enabled Host commands:
 A0 A4 GG GY
-  
+```
 ![image](https://user-images.githubusercontent.com/77227227/195816544-bdd9b3ab-f05d-435b-89ff-038dc95ec07a.png)
 
-  
-Ör-2: İkinci örnek bir konsol komutunu (DE) etklinleştirmek ve console komutunu (A4) devre dışı bırakmak için kullanılan örnektir.
+Example 2: Enable console command DE and disable host command A4:
+```
+Secure> CONFIGCMDS
+List of enabled Console commands:
+GC GS EC FK
+List of enabled Host commands:
+A0 A4 GG GY
+Enter command code (e.g. +CDE) or Q to Quit: +CDE
+Enter command code (e.g. +CDE) or Q to Quit: -HA4
+```
 
-Secure> CONFIGCMDS <Return> 
-List of enabled Console commands: 
-GC GS EC FK 
-List of enabled Host commands: 
-A0 A4 GG GY 
-Enter command code (e.g. +CDE) or Q to Quit: +CDE <Return> 
-List of enabled Console commands: 
-GC GS EC FK DE 
-List of enabled Host commands: 
-A0 A4 GG GY 
-Enter command code (e.g. +CDE) or Q to Quit: -HA4 <Return> 
-List of enabled Console commands: 
-GC GS EC FK DE 
-List of enabled Host commands: 
-A0 GG GY 
-Enter command code (e.g. +CDE) or Q to Quit: Q <Return> 
-Save COMMAND settings to smart card? [Y/N]: N <Return> 
-Secure> 
-
-
- ![11](https://user-images.githubusercontent.com/77227227/195815944-6dc5b97e-7cf7-4deb-be88-ed0fb1a4bd0f.png)
-  
-
-Ör: Son örnek tüm komutları devre dışı bırakmak ve ardından sadece “A” ile başlayan console komularını etkinleştirmek için “*” joker karaktereinin kullanan CONFIGCMDS komutunu göstermek için yapılan örnektir.
-
-Secure> CONFIGCMDS <Return> 
-List of enabled Console commands: 
-GC GS EC FK 
-List of enabled Host commands: 
-A0 A4 GG GY 
-Enter command code (e.g. +CDE) or Q to Quit: -H* <Return> 
-List of enabled Console commands: 
-GC GS EC FK DE 
-List of enabled Host commands: 
-Enter command code (e.g. +CDE) or Q to Quit: +HA* <Return> 
-List of enabled Console commands: 
-GC GS EC FK DE 
-List of enabled Host commands: 
-A0 A2 A4 A6 A8 AA AC AE AG AS AU AW AY 
-Enter command code (e.g. +CDE) or Q to Quit: Q <Return> 
-Save COMMAND settings to smart card? [Y/N]: Y <Return> 
-Insert card and press ENTER: <Return> 
-COMMAND settings saved to the smartcard. 
-Secure> 
-
+Example 3: Disable all host commands and then enable only console commands beginning with "A" using the `*` wildcard:
+```
+Secure> CONFIGCMDS
+Enter command code (e.g. +CDE) or Q to Quit: -H*
+Enter command code (e.g. +CDE) or Q to Quit: +HA*
+Save COMMAND settings to smart card? [Y/N]: Y
+Insert card and press ENTER:
+COMMAND settings saved to the smartcard.
+Secure>
+```
 ![Screenshot_2](https://user-images.githubusercontent.com/77227227/195814201-26eb533c-6e97-4e74-a0a8-abf7e240f333.png)
-
-  
-  
-
-

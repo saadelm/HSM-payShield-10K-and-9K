@@ -1,22 +1,19 @@
+Command: CONFIGPB
 
-Command : CONFIGPB
+Used to display the list of enabled PIN block formats and, when in Secure mode, to enable or disable individual PIN block formats.
 
-Etkinleştirilmiş PIN engelleme biçimlerinin listesini görüntülemek ve (güvenli durumdaysa) ayrı PIN engelleme biçimlerini etkinleştirmek veya devre dışı bırakmak için kullanılır.
+Authorization: The HSM must be in Secure mode to enable or disable PIN block formats. The current status can be viewed in any state.
 
-Authorization : PIN blok formatlarını etkinleştirmek/devre dışı bırakmak için HSM güvenli durumda olmalıdır. PIN Blok biçimi etkinleştirmenin mevcut durumu herhangi bir durumda görüntülenebilir.
+Input: PIN Block Format identifier.
+Output: Shows the list of enabled PIN Block Formats.
+Errors: Invalid entry.
 
-Input: PIN Block Format beliryicisi.
-output: PIN Blocak Format enable listesini gösterir.
-
-Errors: Invalid entry
-
-Ör-1 : Bu örnek, etkinleştirilmiş PIN blok biçimlerinin listesini görüntülemek için CONFIGPB konsol komutunun kullanımını gösterir.
+Example 1: Displaying the list of enabled PIN block formats:
 
 ![1111](https://user-images.githubusercontent.com/77227227/195834979-1a9a3a4b-f4f3-4110-bb22-e222e41d8047.png)
 
-
-Ör-2: Bu örnek, HSM PIN Blok biçimi 03'ün kullanımını etkinleştirmek için CONFIGPB konsol komutunun kullanımını gösterir.
+Example 2: Enabling use of PIN Block format 03 with the CONFIGPB command:
 
 ![image](https://user-images.githubusercontent.com/77227227/195835560-394e658d-f6a9-452e-addc-837bc5139e89.png)
 
-not: +03 olarak komutu girdiğimizde ve daha sona "Q" ile çıkış yaptıktan sonra bize hsm cihazına smartcard insert etme işlemini yapmamızı isteyecektir ve daha sonrasonda "N" diyerek işlemi tamamlamış oluyoruz. Bu kısımdaki amacımız ise yapılan configurasyonun kart üzerine eklenmesidir.
+After entering `+03` and exiting with `Q`, you are prompted to insert a smart card to save the configuration. Selecting "N" ends the process without saving to card.

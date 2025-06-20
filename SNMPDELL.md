@@ -1,17 +1,13 @@
-Community veya User SNMP Silme Süreci:
+Delete SNMP Community or User
 
-Command : SNMPDEL
+Command: SNMPDEL
 
-Function : snmp user ya da community olarak silme fonksiyonunu sağlar.
+Function: Deletes an SNMP user or community entry.
 
-Input : index olarak community ya da user silinir.
+Input: Provide the index of the community or user to delete.
 
-not : secure modda iken bu işlem gerçekleştirilir.
+Note: This operation must be performed while in Secure mode.
 
-ÖR-1 : Örnekte gösterdiğim şekilde SNMPDEL komutunu çalıştırarak oluşturmuş olduğumuz community ve ya user snmpleri siliyoruz ve silme işleminden sonra save and exit diyerek kaydediyoruz.
-
-
-SNMPDEL
+Example: Running SNMPDEL deletes the defined communities or users. After deletion choose "save and exit" to store the changes.
 
 ![image](https://user-images.githubusercontent.com/77227227/196418239-489439e1-7451-4121-b5f8-92a20e652e53.png)
-

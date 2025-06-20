@@ -1,46 +1,21 @@
-LMK Table ( Local Master Key Tablosu)
+LMK Table
 
-LMK'ler, HSM'nin güvenli belleği içindeki bir tabloda saklanır ve her LMK, tablo içinde farklı bir 'yuva' işgal eder. Her yuva aşağıdaki özelliklere sahiptir.
+LMKs are stored in a table within the secure memory of the HSM. Each LMK occupies a different "slot" in the table with the following attributes:
 
+**LMK ID** – A two-digit number uniquely identifying the location of each LMK in the table. All references to LMKs use the LMK ID.
 
-attributes:
+**Key Scheme** – "Variant" for traditional Racal/Thales LMKs where key encryption is performed using the variant method, or "Key Block" for enhanced security using the key block method.
 
-LKM ID: Tablodaki her bir LMK'nın konumunu benzersiz bir şekilde gösteren 2 basamaklı bir sayı. LMK'lara yapılan tüm referanslar, LMK Tanımlayıcısı belirtilerek yapılır.
+**Algorithm** – "3DES (2key)" or "3DES (3key)" for Variant LMKs, and "3DES (3key)" or "AES (256-bit)" for Key Block LMKs. Other algorithms may be supported in future releases.
 
+**Status** – "Test" indicates the LMK is for test purposes. "Live" indicates it is for production use. When installing LMKs, the HSM prevents mixing Test and Live LMKs in the same slot (LMK Value and Old/New LMK Value must have the same status).
 
-Key Scheme: 
+**Comments** – User-entered text that helps identify the LMK.
 
-Geleneksel Racal/Thales LMK için "Varyant" – varyant yöntemi kullanılarak gerçekleştirilen anahtar şifreleme.
-Gelişmiş güvenlik için "Anahtar Blok" – anahtar blok yöntemi kullanılarak gerçekleştirilen anahtar şifreleme.
+**Authorization** – Indicates the authorization status of the HSM for this LMK, either a flag (Authorized State) or a list of authorized activities.
 
+**Old/New Status** – For each LMK stored in the Key Change Storage, a flag indicates whether it is the "old" LMK (loaded with the LO command) or the "new" LMK (loaded with the LN command).
 
-Algorithm:
+**LMK Check Value** – The check value of the LMK.
 
-"3DES (2key)" veya "3DES (3key)", Varyant LMK'leri tarafından kullanılır.
-"3DES (3key)" veya "AES (256-bit)", Key Block LMK'ler tarafından kullanılır.
-Diğer algoritma türleri, gelecekteki yazılım sürümlerinde desteklenebilir.
-
-
-Status:
-
-"Test", LMK'nın test amacıyla kullanıldığını belirtir.
-"Canlı", LMK'nın canlı prodüksiyon amacıyla kullanıldığını belirtir.
-LMK'ları kurarken, HSM, aynı yuva içinde Test ve Canlı LMK'ların karıştırılmasını önleyecektir (yani, LMK Değeri ve Eski/Yeni LMK Değeri aynı statüye sahip olmalıdır).
-
-Comments:
-
-LMK'lerin tanımlanmasına yardımcı olmak için kullanılabilecek, kullanıcı tarafından girilen metin
-
-
-Authorization:
-Indicates the authorization status of the HSM for this particular LMK – either a flag (for Authorized State) or a list of authorized activities
-
-Old/New Status:
-Anahtar Değişikliği Deposunda tutulan her LMK için, bunların bir 'eski' LMK ('LO' komutuyla yüklenir) veya bir 'yeni' LMK ('LN' komutuyla yüklenir) olarak mı kullanılacağını belirten bayrak.
-
-LMK Check Value:
-The check value of the LMK
-
-Old/New Check Value:
-Anahtar Değişikliği Deposunda tutulan 'eski' veya 'yeni' LMK'nın kontrol değeri.
-
+**Old/New Check Value** – The check value of the "old" or "new" LMK stored in Key Change Storage.

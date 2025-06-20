@@ -1,24 +1,23 @@
-View Software Revision Number ( Yazılım Revizyon Numarasını Görüntüleme)
+View Software Revision Number
 
-Command : VR
+Command: VR
 
-Function : Yazılım revizyon numarasını release numarası ve build numarasını görüntüler.
+Function: Displays the software revision number including the release and build numbers.
 
-Aut : Herhangi bir yetkilendirme işlemine gerek yok.
+Authorization: None required.
 
-Inputs : None
+Inputs: None
 
-Outputs : Yazılım revizyon numarası
+Outputs: The software revision number.
 
 Errors: None
 
-VR komutu tarafından bildirilen yazılım revizyonu aşağıdaki formlardan birine sahip olacaktır:
-xxxx-19xx – bu, bu yazılımın PCI HSM sertifikalı olduğunu ve uygun güvenlik ayarlarının (örn. CS Konsolu komutunu kullanarak) gerekli değerlere ayarlandığını gösterir.
-xxxx-09xx – bu, aşağıdakilerden birini gösterir.
-Yazılımın bu sürümü PCI HSM sertifikalı değil veya Yazılımın bu sürümü PCI HSM sertifikalıdır, ancak uygun güvenlik ayarlarından bir veya daha fazlası (örn. CS Konsolu komutu kullanılarak) gerekli değerlere ayarlanmıştır.
-3.0 ve üzeri yazılım sürümleri için, tüm RSA işlemleri otomatik olarak hızlandırılır ve bu nedenle, RSA Booster isteğe bağlı lisansı (HSM9-LIC033) artık kullanımda değildir ve VR komutunun çıktısında görünmez.
+The software revision reported by the VR command will be in one of the following forms:
+- `xxxx-19xx` – Indicates the software is PCI HSM certified and the appropriate security settings (e.g., via the CS console command) are set to the required values.
+- `xxxx-09xx` – Indicates either the software version is not PCI HSM certified, or it is certified but one or more of the required security settings have not been set correctly (again using the CS console command).
 
-Ör-1: 
+From version 3.0 and above, all RSA operations are automatically accelerated, so the optional RSA Booster license (HSM9-LIC033) is no longer used and does not appear in the VR command output.
+
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/196627451-81320ad5-7013-4af8-8727-6364cc258952.png)
-

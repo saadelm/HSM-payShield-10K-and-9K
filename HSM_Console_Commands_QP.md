@@ -1,21 +1,19 @@
-View Printer Port Configuration.
+View Printer Port Configuration
 
-Command : "QP"
+Command: QP
 
-Function: HSM cihazının printer configurasyonlarını ve detaylarını görüntülemek için.
+Function: Displays the printer configuration details of the HSM.
 
-A: authorization için gerek yoktur.
+Authorization: Not required.
 
-Inputs: Print test page : Y or N
+Inputs: Print test page? [Y/N]
 
 Outputs:
+- Confirmation of the current printer configuration
+- Serial configuration settings (for serial printers only)
 
-Geçerli yazıcı yapılandırmasının doğrulanması.
+Errors: None
 
-Seri yapılandırma ayarları (yalnızca seri yazıcı).
-
-Erros : None
-
-ÖR-1:
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/196149709-e45e5ed2-2cab-4059-9757-2bd0a361bdce.png)

@@ -1,15 +1,13 @@
-Re-enable PIN Verification ( PIN Doğrulamayı Yeniden Etkinleştirme)
+Re-enable PIN Verification
 
-Command : A7
+Command: A7
 
-Function : HSM dolandırıcılık algılama işlevinin yapılandırmasını sıfırlamak için kullanılır.
+Function: Used to reset the configuration of the HSM fraud detection function.
 
-Authorizataion : Bu komutun çalışması için HSM cihazının offline olması gerekmektedir. Authorized State ya da activity audit.console kısmının authorized olması gerekmektedir.
-LMK smartkartlarının yönetimi için Officerların yetkilendirme vermesi gerekmektedir.
+Authorization: For this command to run, the HSM must be offline. It must be in the Authorized state or the activity audit.console state must be authorized. Officers must provide authorization for management of LMK smart cards.
 
-Errors : yetki yok hatası, not offline hatası, PIN doğrulama şuanda devre dışı değil.
+Errors: authorization error, not offline error, PIN verification is not currently disabled.
 
-ÖR-1 : 
-
+Example 1:
 
 ![image](https://user-images.githubusercontent.com/77227227/196622996-87f64def-0e63-4545-b7b4-ad7910bd6d3c.png)
