@@ -1,40 +1,30 @@
-View Available Commands (Uygun Olan Komutların Görüntülenmesi)
+View Available Commands
 
-Command :GETCMDS
+Command: GETCMDS
 
-Function : açık olan ve uygun olan çalıştırılabilir olan host ve console komutlarının listesini gösterir.
+Function: Lists the host and console commands that are currently enabled and available for execution.
 
-Bireysel komutların kullanılabilir olup olmadığını kontrol eden üç özellik vardır:
+Three factors determine whether an individual command is available:
+- Whether the command is implemented in the installed firmware.
+- Whether the command is licensed (this check applies only to host commands, not console commands).
+- Whether the command has been enabled or disabled using the CONFIGCMDS console command (or via payShield Manager).
 
-Komutun kurulu bellenimde uygulanıp uygulanmadığı
-Komutun kullanım için lisanslanıp lisanslanmadığı yani kurulu lisansa dahil olup olmadığı. Yalnızca ana bilgisayar komutlarının (konsol komutlarının değil) bu şekilde denetlendiğini unutmayın;
-Komutun CONFIGCMDS konsol komutları kullanılarak (veya payShield Manager aracılığıyla) etkinleştirilip etkinleştirilmediği.
+Note: Some listed commands may require additional license options. For example, the EI command requires the RSA algorithm to be licensed.
 
-Not: Listelenen komutlardan bazıları, ek lisans seçeneklerinin etkinleştirilmesini gerektirebilir. Örneğin, EI komutu, doğru çalışması için RSA algoritmasının lisansa dahil edilmesini gerektirir.
+Authorization: None required.
 
-Authorization : Herhangi bir yetki gerektirmez.
+Inputs: `[-h l]`
 
-Inputs : [-hl]
+Switch | Description
+-------|-----------
+(blank) | Display a list of all host and console commands that are implemented, licensed and enabled.
+`-h` | Display a mixture of implemented, licensed and enabled commands. (Affected by enabling/disabling commands using CONFIGCMDS.)
+`-l` | Display a list of all implemented and licensed commands, regardless of enable/disable state.
 
-Switch      Description
-<blank>     Uygulanan, lisanslanan ve etkinleştirilen tüm ana bilgisayar ve konsol komutlarının bir listesini görüntüleyin.
-  
--h          Uygulanan, lisanslanan ve etkinleştirilen ana bilgisayar ve konsol komutlarının bir karmasını görüntüleyin. (CONFIGCMDS konsol komutu kullanılarak komutların etkinleştirilmesi/devre dışı bırakılmasından etkilenir.)
-  
--l          Uygulanan, lisanslanan tüm ana bilgisayar ve konsol komutlarının bir listesini görüntüleyin. (CONFIGCMDS konsol komutu kullanılarak komutların etkinleştirilmesi/devre dışı bırakılmasından etkilenmez.)
+Outputs: Lists the available HSM commands.
 
-  
- Outputs : Uygun olan HSM komutları listeler.
-  
-  
-  ![image](https://user-images.githubusercontent.com/77227227/196630413-dac85cab-c9c6-436d-9542-d674666b7424.png)
-  
-  
-  
-  GETCMDS -h -l 
-  
-  ![image](https://user-images.githubusercontent.com/77227227/196631576-4604fbb9-cf9f-4810-9c04-43d064380b50.png)
+![image](https://user-images.githubusercontent.com/77227227/196630413-dac85cab-c9c6-436d-9542-d674666b7424.png)
 
-  
-  
-  
+`GETCMDS -h -l`
+
+![image](https://user-images.githubusercontent.com/77227227/196631576-4604fbb9-cf9f-4810-9c04-43d064380b50.png)

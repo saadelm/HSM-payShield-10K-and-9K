@@ -1,20 +1,13 @@
-View / Reset Utilization Data (Kullanım Verilerini Görüntüle/Sıfırla)
+View / Reset Utilization Data
 
-Function : Kullanım verisini console üzerinden görmemizi sağlar. Bu verileri yazdırabiliriz veya değiştirebiliriz.
+Function: Displays utilization data via the console. You can print or reset this data.
 
-Auth: Herhangi bir yetkilendirme gerektirmez.
+Authorization: None required.
 
-NOT: 
+Note: Utilization statistics are reset whenever new software is loaded onto the HSM. For example, a load range defined as "%10-20" means "exactly 10% up to just under 20%". Statistics are provided regardless of which host interface received the commands.
 
-HSM'ye yeni yazılım yüklendiğinde kullanım istatistikleri de sıfırlanır.
+Inputs: Optionally reset the data and print the accumulated data from the HSM.
 
-Örneğin "%10-20" olarak tanımlanan bir HSM yükleme aralığının kesin anlamı "tam olarak %10'dan %20'nin biraz altına kadar" şeklindedir.
-
-Komutların hangi ana bilgisayar arabirimi üzerinden alındığına bakılmaksızın istatistikler sağlanır
-
-
-Inputs : Verileri Reset edebiliyoruz, HSM'e eklenen verileri çıktı olarak alıp yazdırabiliyoruz.
-
-Ör-1;
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/196670528-8584a2de-fc19-484d-a391-32aa44e097e6.png)

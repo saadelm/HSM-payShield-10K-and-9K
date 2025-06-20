@@ -1,23 +1,12 @@
-Multiple LMKs (Çoklu LMK)
+Multiple LMKs
 
-Tek bir HSM'e birden fazla LMK kurmak mümkündür. 
-Kurulu LMK'ların sayısı ve türüyle ilgili kesin ayrıntılar, HSM'nin lisans dosyası aracılığıyla kontrol edilir:
+It is possible to install more than one LMK on a single HSM. The exact number and type of LMKs that can be installed are controlled via the HSM's license file.
 
-Lisanslarına göre LMKları çoklayarak çalışabilirsiniz. Daha önce bahsettiğim gibi 2 adet LMK mevcuttur. Key Block ve Variant
+Depending on the license you can operate multiple LMKs. As mentioned earlier there are two LMK types: Key Block and Variant.
 
-Lisans: 
-
-Default-no specific multi-LMK lisansı yok ise : İki adet lmk kullanabilirsiniz key block ayrı variant ayrı olacak şekilde.
-
-HSM9-LIC012 LMK x2 : İki eşzamanlı LMK kurulabilir; Varyant ve Anahtar Blok LMK'lerinin herhangi bir kombinasyonu olabilirler.
-(optional Lisans)
-
-HSM9-LIC013 LMK x5 : Beş eşzamanlı LMK kurulabilir; Varyant ve Anahtar Blok LMK'lerinin herhangi bir kombinasyonu olabilirler.
-(optional Lisans)
-
-HSM9-LIC021 LMK x10 : On eşzamanlı LMK kurulabilir. Variant ve Key Block kombinasyonları olabilir.
-
-HSM9-LIC022 LMK x20 : yirmi eşzamanlı LMK kurulabilir. Variant ve Key Block kombinasyonları olabilir.
-
-
-
+Licenses:
+- **Default** – If no specific multi-LMK license is present, two LMKs can be used (one Key Block and one Variant).
+- **HSM9-LIC012 LMK x2** – Two LMKs can be installed simultaneously; any combination of Variant and Key Block LMKs (optional license).
+- **HSM9-LIC013 LMK x5** – Up to five LMKs can be installed simultaneously; any combination of Variant and Key Block LMKs (optional license).
+- **HSM9-LIC021 LMK x10** – Up to ten LMKs can be installed simultaneously; Variant and Key Block combinations allowed.
+- **HSM9-LIC022 LMK x20** – Up to twenty LMKs can be installed simultaneously; Variant and Key Block combinations allowed.

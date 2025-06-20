@@ -1,27 +1,22 @@
 View Auxiliary Port Configuration
 
-Command : "QA"
+Command: QA
 
-Function : Auxiliary port parametrelerinin detaylarını gösterir.
+Function: Displays the details of the Auxiliary port parameters.
 
-Authorization : Bu komut için bir yetkilendirme gerekmemektedir.
+Authorization: Not required.
 
-Input : None
+Inputs: None
 
-Outputs : 
+Outputs:
+- IP Address
+- Subnet Mask
+- Default Gateway
+- MAC address
+- Ethernet speed settings
 
-IP Adresi
+Errors: None
 
-Subnet Mask
-
-Default Gateway
-
-MAC adress
-
-Ethernet Hız Ayarları
-
-Errors : None.
-
-Ör-1 : 
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/196164037-23085eab-3ebc-420c-a88d-8af409da53aa.png)

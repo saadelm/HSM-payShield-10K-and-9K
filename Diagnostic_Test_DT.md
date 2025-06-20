@@ -1,25 +1,21 @@
-Diagnoctic Test
+Diagnostic Test
 
-Command : DT
+Command: DT
 
-Function : Kriptolojik test (AES,DES,RSA,SHA-1),Memory Test, Fan Hızı Test, Voltaj Test vs.
+Function: Runs cryptologic tests (AES, DES, RSA, SHA-1), memory tests, fan speed tests, voltage tests, and more.
 
-Authorization: Herhangi bir yetkilendirmeye gerek yok.
+Authorization: No authorization required.
 
-Inputs: AES,DES,FAN,VOLT,PSU,MD5 vs 
+Inputs: AES, DES, FAN, VOLT, PSU, MD5 and similar parameters.
 
-Output : Gerekli statüleri raporlar.
+Output: Reports the relevant status for each test.
 
-ÖR-1: DT Komut Çıktısı ile testlerin çıktısını görüntülemek.
+Example 1: Running the "DT" command shows the test output.
 
 ![image](https://user-images.githubusercontent.com/77227227/196625430-c3ace6d9-2d64-413d-9da0-ebb0df28deec.png)
 
-Sonunda diagnosctic complete şeklinde gösterir.
+At the end it displays "diagnostic complete".
 
-
-ÖR-2: DT verbose komutu ile daha detaylı kontroller ve çıktıları alınır.
+Example 2: Using "DT verbose" provides more detailed checks and output.
 
 ![image](https://user-images.githubusercontent.com/77227227/196625703-8a46f491-2244-4277-890e-60b4506984d4.png)
-
-
-

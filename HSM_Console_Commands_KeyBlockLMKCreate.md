@@ -1,96 +1,46 @@
+Key Block LMK Creation
 
-Key Block LMK Oluşturma!
+Load LMK
 
-Load LMK 
-
-LMK oluşturma için yapılması gereken işlemler.
+The following steps describe how to create an LMK.
 
 Command: LK
 
-Function: LMK bileşenlerini akıllı kartlardan yüklemek için.
+Function: Loads LMK components from smart cards.
 
-Authorization: Bu komutu çalıştırmak için HSM SECURE(güvenli) durumda olmalıdır
+Authorization: The HSM must be in SECURE mode.
 
-Inputs: 
-
-LMK Tanımlayıcı: 2 sayısal basamak.
-
-LMK bileşenlerine sahip akıllı kartlar (RLMK'ler desteklenir).
-
-Akıllı kartlar veya şifreler için PIN'ler. PIN 60 saniye içinde girilmelidir.
-
-Bu LMK'nın Varsayılan/Yönetim LMK'sı yapılıp yapılmayacağı - aşağıdaki Notlara bakın.
+Inputs:
+- LMK Identifier: two digits.
+- Smart cards containing the LMK components (RLMKs supported).
+- PINs for the smart cards or passphrases. The PIN must be entered within 60 seconds.
+- Whether this LMK becomes the Default/Management LMK (see notes below).
 
 Outputs:
+- Individual LMK component check value(s).
+- Composite LMK check value.
 
-Bireysel LMK bileşeni kontrol değeri/değerleri.
+Notes: For PCI HSM processes, authentication of PINs and smart cards requires Security Officers. Each SO inserts a different smart card and enters the PIN when generating LMKs. The example shows generation of a Key Block LMK.
 
-Sürekli olan LMK kontrol değeri.
+Errors may include:
+- Invalid LMK identifier.
+- Load failed check comparison – card is empty.
+- Not an LMK card – card formatted for HSM settings or license card.
+- Card not formatted.
+- Smart card error: invalid PIN entered.
+- Invalid PIN – less than 5 or more than 8 digits.
+- Invalid key – standard Thales test key cannot be used in live mode.
+- Mismatched key status – components are in different states (live/test).
+- Invalid key – multiple key components required.
 
-Notes: For PCI HSM süreci PINs ve smartkartların authencate olması için S.O (SecurityOfficerlara ihtiyac vardır.)
-
-Her bir SO farklı bir smartkartı hsm cihazına insert eder ve PIN değerini girer. Bu sürec LMKları üretirken yapılması gerek sürectir. Burda örnek olarak key block LMK dan bahsedeceğiz.
-
-
-Errors: 
-
-Geçersiz LMK tanımlayıcısı - LMK yüklenmemiş veya girilen tanımlayıcı aralık dışında.
-
-Yükleme başarısız çek karşılaştırması - kart boş.
-
-LMK kartı değil - HSM ayarları için biçimlendirilmiş kart veya bir lisans kartıdır.
-
-Kart biçimlendirilmemiş - kart biçimlendirilmemiş.
-
-Akıllı kart hatası; komut/dönüş: 0003 - geçersiz PIN girildi.
-
-Geçersiz PIN; yeniden girin - 5'ten az veya 8 basamaktan büyük bir PIN girilir.
-
-Geçersiz anahtar – standart bir Thales test anahtarına canlı durum verilemez.
-
-Uyumsuz anahtar durumu – bileşenlerin farklı durumları vardır ("canlı" veya "test").
-
-Geçersiz anahtar - Birden çok anahtar bileşen gerekli - birden çok bileşeni zorlamak için güvenlik ayarı EVET olarak ayarlandığında, tek bir bileşen kullanılarak bir LMK (test LMK'sı dışında) yüklenmeye çalışıldı.
-
-
-
-
-Ör: KeyBlock LMK Generate
-
-Command : LK komutunu kullanacak işlemlere başlıyoruz. ve LK komutunu girdikten sonra bizdeler LMK ID soracaktır ve keyblock 1 olduğu için 1 işaretleyip enter'a basıyoruz.
-
-![image](https://user-images.githubusercontent.com/77227227/195851082-8913a930-9796-465c-a68f-7b5fc939e8cc.png)
-
-Daha sonraki aşamada ise enter command seceneği geliyor ve biz de keyblockLMK için bir commet belirliyoruz Ör:KeyBlockLMK
-
-![image](https://user-images.githubusercontent.com/77227227/195851298-30448c60-28ea-4d24-acc5-8413bce0b6a8.png)
-
-Diğer aşamada insert card and press ENTER : kısmı geliyor ve keyblockLMK smartcard'ının hsm cihazına insert ediyoruz.
-
-![image](https://user-images.githubusercontent.com/77227227/195851533-86a46dc3-cd10-4248-940a-328e0bc7d899.png)
-
-smartcard PIN'i giriyoruz. ve hsm cihazı smartcard'ı kendisi çıkartıyor ve bize check: "examplenumber" değeri veriyor.
-
-Load more components? Y/N şeklinde diğer seçenek geliyor ve başka bir component üretmek istersek yes diyoruz ve diğer lmk smartcardını takıyoruz. yok ise "N" diyoruz ve işlem tamamlanmış oluyor.
-
-![image](https://user-images.githubusercontent.com/77227227/195852160-47d8b0da-29bc-4049-8e9e-21ee9156918d.png)
-
-Confirm Details Y/N : şeklinde seçenek geliyor ve Y dedikten sonra keyblockLMK üretmiş oluyoruz.
-
-En son işlem başarılı bir şekilde tamamlandıktan sonra VT komutu ile keyblock LMK'yı görmek için yazıp çalıştırıyoruz.
+Example procedure:
+1. Enter the LK command and specify the LMK ID (e.g., 1 for Key Block 1).
+2. Provide a comment for the Key Block LMK.
+3. Insert the smart card and press ENTER.
+4. Enter the smart card PIN.
+5. The HSM ejects the card and displays a check value.
+6. When prompted "Load more components? Y/N" insert additional component cards if required.
+7. Confirm the details and the Key Block LMK is created.
+8. Use the VT command to view the Key Block LMK.
 
 ![image](https://user-images.githubusercontent.com/77227227/195852708-fd6006fb-2b59-4a48-9218-d311ccd8366f.png)
-
-comment schema algoritma olarak hepsini kontrol edebiliyoruz check kısmında değerleri de yazıyor.
-
-
-
-
-
-
-
-
-
-
-
-

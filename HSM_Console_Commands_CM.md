@@ -1,34 +1,26 @@
-Configure Managment Port
+Configure Management Port
 
-Command : "CM"
+Command: CM
 
-Function : Sadece HSM'nin yönetimi için kullanılan bir Ethernet bağlantı noktası olan Yönetim bağlantı noktasını yapılandırmak için kullanılır. Ana bilgisayara bağlantı Ethernet üzerinden ise, bu amaç için Ethernet ana bilgisayar bağlantı noktası kullanılır. Yönetim Ethernet portu, HSM'nin dahili yazılımını güncellemek, lisans bilgilerini güncellemek ve bir HSM'nin payShield Manager aracılığıyla yönetilmesini sağlamak için kullanılır.
+Function: Configures the Management Ethernet port, which is used exclusively for administering the HSM. If host connectivity is via Ethernet, the host Ethernet port is used for that purpose. The management port is used to update firmware, update license information, and allow management through payShield Manager.
 
-Ayrıca yeni gelen konfigürasyon ayarlarını ve HSM cihazının kullanması gereken fonksiyonları enable/disable etme durumu vardır.
+New configuration options can be enabled or disabled as required.
 
-Authorization: HSM'in Authorizate etmek için offline ve secure modunda olması gerekmektedir. 
+Authorization: The HSM must be offline and in Secure mode.
 
-Inputs :  
+Inputs:
+- Choose whether the IP address is set manually or automatically.
+- If manual, provide the address details.
+- If DHCP is used, a network name can be entered.
+- Ethernet speed setting.
+- Enable payShield Manager connectivity (local or remote).
 
-IP adresinin manual mi yoksa otomatik mi üretildiği
-
-Manuel olarak türetilmişse, adres ayrıntıları girilmelidir.
-
-DHCP kullanılıyorsa, bir ağ adı girilebilir.
-
-Ethernet hız ayarı.
-
-PayShield Manager bağlantısını etkinleştirin (yerel veya uzak)
-
-
-
-"CM" komut çıktısı
+Example output:
 
 ![image](https://user-images.githubusercontent.com/77227227/196153566-aa8e5c3b-ec62-46f1-b296-a440e3281f51.png)
 
-Output: None
+Outputs: None
 
-Errors : None
+Errors: None
 
 ![image](https://user-images.githubusercontent.com/77227227/196155433-afe734e7-c6ff-4224-b825-7f5e15b03e9b.png)
-

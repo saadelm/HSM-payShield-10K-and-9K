@@ -1,20 +1,15 @@
-Suspend/Resume Collection of Health Check Counts (Sağlık Kontrolü Sayılarının Toplanmasını Askıya Al/Sürdür)
+Suspend/Resume Collection of Health Check Counts
 
-Command:
-HEALTHENABLE
+Command: HEALTHENABLE
 
-Function:
-Sağlık Kontrolü sayımlarının toplanmasını askıya almak veya sürdürmek için kullanılır. Örneğin veri gerekli değilse veri toplamanın askıya alınmasına izin verir.
+Function: Suspends or resumes collection of health check counts. For example, data collection can be suspended when the information is not required.
 
+Authorization: Not required.
 
-Authorization: Bu komut için auth gerekli değildir.
- 
-Inputs: Mevcut durumun değiştirilip değiştirilmeyeceği gösterir.
+Inputs: Indicates whether to change the current state.
 
-Outputs: Çıktı
+Outputs: Status messages.
 
-Not: Bir yazılım yüklemesinin ardından, Sağlık Kontrolü sayılarının toplanması devre dışı bırakılır.
+Note: After a software load, collection of health check counts is disabled by default.
 
 ![image](https://user-images.githubusercontent.com/77227227/196186859-638f1952-389f-4777-93c2-42fa5fac61a1.png)
-
-

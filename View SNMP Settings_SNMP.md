@@ -1,20 +1,13 @@
-
 View SNMP Settings
 
-Command:
-SNMP
+Command: SNMP
 
-Function:
+Function: Displays the current SNMP settings and enables or disables the provision of Utilization and Health Check data via SNMP.
 
-Mevcut SNMP ayarlarını görüntülemek ve SNMP aracılığıyla Kullanım ve Sağlık Kontrolü verilerinin sağlanmasını etkinleştirmek/devre dışı bırakmak için kullanılır.
+Inputs: Enable or disable providing Utilization and Health Check data over SNMP. Also specifies which Ethernet port is used for SNMP traffic.
 
-Inputs: 
-Kullanım ve Sağlık Kontrolü verilerinin SNMP aracılığıyla sağlanmasını Etkinleştirme/Devre Dışı Bırakma.
-SNMP trafiği için hangi Ethernet bağlantı noktasının kullanılacağının çıktısı.
+Outputs: Displays the SNMP information.
 
-Outputs: SNMP bilgilerinin çıktılarını verir.
-
-
-ÖR-1: Gösterilen örnek komutta snmp enable edilmiştir.
+Example: SNMP enabled as shown.
 
 ![image](https://user-images.githubusercontent.com/77227227/196416052-45f09f53-8dc2-4e63-946a-98a586403277.png)

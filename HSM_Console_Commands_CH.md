@@ -1,32 +1,21 @@
-
 Configure Host Port
 
-Command : CH
+Command: CH
 
-Function : Ana bilgisayar bağlantı noktasını, aşağıdakilerden biri olabilecek bir tür veri iletişim ekipmanı ve kontrol ekipmanına öykünecek şekilde yapılandırmak için:
+Function: Configures the host port to emulate data communications equipment or control equipment. Supported modes include:
+- Standard asynchronous emulation
+- Transparent asynchronous emulation
+- Ethernet
+- FICON
 
-Standart asenkron emülasyon.
+The host port settings can optionally be stored on a smart card. New settings take effect immediately after the command completes. It is recommended that the Management Ethernet Port, Host 1 Ethernet Port, and Host 2 Ethernet Port are on different IP subnets.
 
-Şeffaf asenkron emülasyon.
+Authorization: The HSM must be in Offline or Secure mode (not Online).
 
-Ethernet.
+Inputs: Configure the desired settings (for example IP address, subnet, TLS, TCP, UDP, etc.).
 
-FICON
-
-Ana bilgisayar bağlantı noktası ayarı isteğe bağlı olarak bir akıllı karta kaydedilebilir. Yeni ayarlar, komut tamamlandıktan hemen sonra devreye girer. Yönetim Ethernet Bağlantı Noktası, Ana Bilgisayar 1 Ethernet Bağlantı Noktası ve Ana Bilgisayar 2 Ethernet Bağlantı Noktasının birbirinden farklı IP alt ağlarında olması önerilir.
-
-
-Authorization : HSM bu komutu çalıştırması için Offline ya da Secure modunda olmalıdır. (Online mode çalıştırmaz)
-
-
-Inputs : Secenekleri istelilen duruma göre konfigürasyon işlemi tamamlanır.
-
-
-ör-1 : 
+Example:
 
 ![image](https://user-images.githubusercontent.com/77227227/195867664-6b708748-9d36-442f-9790-e6d077a34d6d.png)
 
-not: "CH" komutunu kullanarak gerekli ayarlamaları istenilen duruma göre yapılandırabiliyorsunuz. Ör: IP adresi, subnet, TLS, TCP, UDP vs gibi ayarlamaları gerçekleştirebiliyorsunuz. Eğer HSM cihazından daha önceden config yapılmış ve düzelmek istiyorsanız  "Save HOST settings to smart card? [Y/N]:" Y olarak işaretlemeniz gerekmektedir. Ancak bu süreçte LMK erase edilir ve tekrardan üretilir.
-
-
- 
+Note: When saving host settings to a smart card, choose "Y" when prompted. This process erases the installed LMKs, which must then be regenerated.

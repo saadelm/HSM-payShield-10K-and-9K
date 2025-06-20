@@ -1,16 +1,14 @@
-LMK Commands (LMK Komutları)
+LMK Commands
 
-HSM, LMK işlemlerini desteklemek için aşağıdaki konsol (console) komutlarını sağlar: 
+The HSM provides the following console commands to support LMK operations:
+- **Generate LMK Component (GK)** – Generate LMK components
+- **Load LMK (LK)** – Load an LMK into the HSM
+- **Load "Old" LMK into Key Change Storage (LO)** – Load the previous LMK into key change storage
+- **Load "New" LMK into Key Change Storage (LN)** – Load the new LMK into key change storage
+- **Verify LMK Store (V)** – Verify the LMK
+- **Duplicate LMK Component Sets (DC)**
+- **Delete LMK (DM)** – Delete the LMK
+- **Delete "Old" or "New" LMK from Key Change Storage (DO)**
+- **View LMK Table (VT)** – Display the LMK table
 
-Generate LMK Component (GK) = LMK için Component üretme komutu
-Load LMK (LK) = HSM Cihazına LMK yüklemek için kullanılan komut
-Load 'Old' LMK into Key Change Storage (LO) = 'Eski' LMK'yi Anahtar Değişikliği Deposuna Yükleyin
-Load 'New' LMK into Key Change Storage (LN) = 'Yeni' LMK'yı Anahtar Değişkliği Deposına Yükleyin.
-Verify LMK Store(V) : LMK'yi doğrulamak için kullanılır
-Duplicate LMK Components Sets(DC)
-Delete LMK (DM) : LMK silme işlemi için kullanılır.
-Delete 'Old' or 'New' LMK from Key Change Storage (DO)
-View LMK Table (VT) : LMK tablosunu görüntülemk için kullanır.
-
-
-Genel olarak LMK Console Komutları bu şekildedir. Bu komutların detaylarını birlikte inceleyeceğiz.
+These are the general LMK console commands. Their details are discussed individually.
