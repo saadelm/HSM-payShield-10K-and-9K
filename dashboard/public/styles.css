@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.config-form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+textarea {
+    font-family: 'Courier New', monospace;
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    background: #dc3545;
+    color: white;
+}
+
+.btn-small:hover {
+    background: #c82333;
+}
+
+.status-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: none;
+}
+
+.status-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.status-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+.category-filter {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.command-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.command-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.command-card:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.command-card .command-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.command-card .command-code {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.command-card .command-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.command-card .command-category {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+
+.results-header,
+.history-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.results-container,
+.history-container {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.result-item,
+.history-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #667eea;
+    margin-bottom: 15px;
+}
+
+.result-item:last-child,
+.history-item:last-child {
+    margin-bottom: 0;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.result-command {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #667eea;
+    font-size: 1.1em;
+}
+
+.result-timestamp {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.result-response {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+
+.result-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #dc3545;
+}
+
+.placeholder {
+    text-align: center;
+    color: #999;
+    padding: 40px;
+    font-style: italic;
+}
+
+.custom-command {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .command-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

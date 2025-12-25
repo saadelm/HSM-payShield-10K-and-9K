@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Configuration file (contains sensitive IP/port info)
+hsm-config.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
