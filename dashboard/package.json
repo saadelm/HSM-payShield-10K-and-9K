@@ -1,0 +1,25 @@
+{
+  "name": "hsm-payshield-dashboard",
+  "version": "1.0.0",
+  "description": "Web dashboard for managing Thales payShield HSM 10K and 9K",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "HSM",
+    "payShield",
+    "Thales",
+    "hardware security module",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

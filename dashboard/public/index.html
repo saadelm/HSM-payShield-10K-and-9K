@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSM payShield Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔐 HSM payShield 10K/9K Dashboard</h1>
+            <p class="subtitle">Thales payShield Hardware Security Module Management</p>
+        </header>
+
+        <!-- Configuration Section -->
+        <section class="config-section">
+            <h2>HSM Configuration</h2>
+            <div class="config-form">
+                <div class="form-group">
+                    <label for="hsm-ip">HSM IP Address:</label>
+                    <input type="text" id="hsm-ip" placeholder="192.168.1.100" />
+                </div>
+                <div class="form-group">
+                    <label for="hsm-port">HSM Port:</label>
+                    <input type="number" id="hsm-port" placeholder="1500" value="1500" />
+                </div>
+                <div class="button-group">
+                    <button id="save-config" class="btn btn-primary">Save Configuration</button>
+                    <button id="test-connection" class="btn btn-secondary">Test Connection</button>
+                </div>
+                <div id="config-status" class="status-message"></div>
+            </div>
+        </section>
+
+        <!-- Command Execution Section -->
+        <section class="command-section">
+            <h2>Command Execution</h2>
+
+            <!-- Predefined Commands -->
+            <div class="predefined-commands">
+                <h3>Predefined Commands</h3>
+                <div class="category-filter">
+                    <label for="category-select">Filter by Category:</label>
+                    <select id="category-select">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+                <div id="command-buttons" class="command-grid"></div>
+            </div>
+
+            <!-- Custom Command Input -->
+            <div class="custom-command">
+                <h3>Custom Command</h3>
+                <div class="form-group">
+                    <label for="custom-command-input">Enter Command:</label>
+                    <textarea id="custom-command-input" rows="3" placeholder="Type your HSM command here..."></textarea>
+                </div>
+                <button id="send-custom-command" class="btn btn-primary">Send Command</button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <h2>Command Results</h2>
+            <div class="results-header">
+                <button id="clear-results" class="btn btn-small">Clear Results</button>
+            </div>
+            <div id="results-container" class="results-container">
+                <p class="placeholder">No commands executed yet. Select a predefined command or enter a custom command above.</p>
+            </div>
+        </section>
+
+        <!-- Command History -->
+        <section class="history-section">
+            <h2>Command History</h2>
+            <div class="history-header">
+                <button id="clear-history" class="btn btn-small">Clear History</button>
+            </div>
+            <div id="history-container" class="history-container">
+                <p class="placeholder">Command history will appear here.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
